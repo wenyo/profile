@@ -1,11 +1,10 @@
 <script setup>
-
+import Nav from "./components/Nav.vue";
 </script>
 
 <template>
-  <div class="bg-gray">
-    App
-  </div>
+  <main>
+    <Nav />
+    <div>App</div>
+  </main>
 </template>
-
-
