@@ -5,14 +5,14 @@
 </template>
 
 <script>
-import { defineComponent, computed } from 'vue'
+import { defineComponent, computed } from "vue";
 
 export default defineComponent({
-  name: 'SvgIcon',
+  name: "SvgIcon",
   props: {
     prefix: {
       type: String,
-      default: 'icon',
+      default: "icon",
     },
     name: {
       type: String,
@@ -20,12 +20,11 @@ export default defineComponent({
     },
     color: {
       type: String,
-      default: '#333',
     },
   },
   setup(props) {
-    const symbolId = computed(() => `#${props.prefix}-${props.name}`)
-    return { symbolId }
+    const symbolId = computed(() => `#${props.prefix}-${props.name}`);
+    return { symbolId };
   },
-})
+});
 </script>
